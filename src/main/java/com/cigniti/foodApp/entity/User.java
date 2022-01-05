@@ -22,7 +22,6 @@ import lombok.ToString;
 
 
 @ToString
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -34,61 +33,60 @@ public class User {
 	@Getter @Setter
 	private int userId;
 	
-
-	@Getter @Setter
 	@Column(name = "firstName")
+	@Getter @Setter
 	private String firstName;
 
-	@Getter @Setter
 	@Column(name = "lastName")
+	@Getter @Setter
 	private String lastName;
 
-	@Getter @Setter
 	@Column(name = "email")
+	@Getter @Setter
 	private String email;
 
-	@Getter @Setter
 	@Column(name = "address")
+	@Getter @Setter
 	private String address;
 
-	@Getter @Setter
 	@Column(name = "phoneNumber")
+	@Getter @Setter
 	private String phoneNumber;
 
-	@Getter @Setter
 	@Column(name = "userName")
+	@Getter @Setter
 	private String userName;
 
-	@Getter @Setter
 	@Column(name = "password")
+	@Getter @Setter
 	private String password;
 
-	@Getter @Setter
 	@Column(name = "logId")
+	@Getter @Setter
 	private String logId;
 
-	@Getter @Setter
 	@Column(name = "sysTime")
+	@Getter @Setter
 	private String sysTime;
 
-	@Getter @Setter
 	@Column(name = "ipAddress")
+	@Getter @Setter
 	private String ipAddress;
 
-	@Getter @Setter
 	@Column(name = "status")
+	@Getter @Setter
 	private String status;
 
 	@ManyToOne(targetEntity = Restaurant.class, fetch = FetchType.EAGER)
 	@JoinColumn(name = "restId", insertable = false, updatable = false)
 	private Restaurant restaurant;
 
-	@Getter @Setter
 	@Column(name = "restId")
+	@Getter @Setter
 	private int restId;
 
-	@Getter @Setter
 	@Column(name = "role")
+	@Getter @Setter
 	private String role;
 	
 	@OneToMany(mappedBy = "user")
