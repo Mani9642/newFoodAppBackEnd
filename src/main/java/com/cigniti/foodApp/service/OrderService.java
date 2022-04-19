@@ -1,8 +1,8 @@
 package com.cigniti.foodApp.service;
 
-import java.util.List;
-
 import com.cigniti.foodApp.entity.Order;
+
+import java.util.List;
 
 public interface OrderService {
 	

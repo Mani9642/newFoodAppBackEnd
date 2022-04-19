@@ -1,13 +1,12 @@
 package com.cigniti.foodApp.service;
 
-import java.util.List;
-import java.util.Optional;
-
+import com.cigniti.foodApp.entity.DeliveryAgent;
+import com.cigniti.foodApp.repository.DeliveryAgentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cigniti.foodApp.entity.DeliveryAgent;
-import com.cigniti.foodApp.repository.DeliveryAgentRepository;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class DeliveryAgentServiceImpl implements DeliveryAgentService {

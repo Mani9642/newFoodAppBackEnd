@@ -1,13 +1,12 @@
 package com.cigniti.foodApp.service;
 
-import java.util.List;
-import java.util.Optional;
-
+import com.cigniti.foodApp.entity.Restaurant;
+import com.cigniti.foodApp.repository.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cigniti.foodApp.entity.Restaurant;
-import com.cigniti.foodApp.repository.RestaurantRepository;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class RestaurantServiceImpl implements RestaurantService {
