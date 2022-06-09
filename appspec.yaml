@@ -5,5 +5,5 @@ Resources:
       Properties:
         TaskDefinition: "<TASK_DEFINITION>"
         LoadBalancerInfo:
-          ContainerName: "democontainer"
-          ContainerPort: 3000
+          ContainerName: "backendcontainer"
+          ContainerPort:  8095
