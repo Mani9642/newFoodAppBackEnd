@@ -37,21 +37,13 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image":  <IMAGE1_NAME>,
+      "image": "<IMAGE1_NAME>,
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
       "disableNetworking": null,
       "interactive": null,
-      "healthCheck": {
-        "retries": 3,
-        "command": [
-          "\"curl -s http://localhost:8095 || exit 1\""
-        ],
-        "timeout": 3,
-        "interval": 5,
-        "startPeriod": 300
-      },
+      "healthCheck": null,
       "essential": true,
       "links": null,
       "hostname": null,
@@ -72,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:452444392358:task-definition/backend:1",
-  "family": "backend",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:452444392358:task-definition/Backend:1",
+  "family": "Backend",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -115,12 +107,6 @@
       "targetId": null,
       "targetType": null,
       "value": null,
-      "name": "ecs.capability.container-health-check"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
       "name": "ecs.capability.execution-role-ecr-pull"
     },
     {
@@ -134,12 +120,6 @@
       "targetType": null,
       "value": null,
       "name": "ecs.capability.task-eni"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
     }
   ],
   "pidMode": null,
